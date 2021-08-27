@@ -4,8 +4,7 @@
 ***************************
 QuantumultX:
 [rewrite_local]
-^https:\/\/papi\.jiemian\.com\/app\/user\/* url script-response-body https://raw.githubusercontent.com/litieyin/AD_VIP/main/Script/jiemian.js
-^https:\/\/papi\.jiemian\.com\/app\/pro\/* url script-response-body https://raw.githubusercontent.com/litieyin/AD_VIP/main/Script/jiemian.js
+^https:\/\/papi\.jiemian\.com\/app\/(user|pro)\/ url script-response-body https://raw.githubusercontent.com/litieyin/AD_VIP/main/Script/jiemian.js
 [mitm]
 hostname = papi.jiemian.com
 **************************/
