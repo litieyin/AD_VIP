@@ -9,9 +9,8 @@ QuantumultX:
 hostname = papi.jiemian.com
 **************************/
 var body = $response.body
-    .replace(/\"is_pro\":0/g, "\"is_pro\":1")
-    .replace(/\"is_pay\":1/g, "\"is_pay\":0")
+    .replace(/\"is_pro\":0/, "\"is_pro\":1")
     .replace(/\"expire_time\":\"\"/, "\"expire_time\":\"2049-12-31\"")
     .replace(/\"free_read_expire\":\"\"/, "\"free_read_expire\":\"2049-12-31\"")
-    .replace(/\"free_read_num\":(\"\d*\"|\d*)/, "\"free_read_num\":99999");
+    .replace(/\"free_read_num\":(\"\d*\"|\d*)/, "\"free_read_num\":4537");
 $done({ body });
