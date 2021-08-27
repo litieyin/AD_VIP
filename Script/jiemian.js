@@ -13,5 +13,5 @@ var body = $response.body
     .replace(/\"is_pay\":1|null/g, "\"is_pay\":0")
     .replace(/\"expire_time\":\"\"/, "\"expire_time\":\"2049-12-31\"")
     .replace(/\"free_read_expire\":\"\"/, "\"free_read_expire\":\"2049-12-31\"")
-    .replace(/\"free_read_num\":\".\"/, "\"free_read_num\":9999");
+    .replace(/\"free_read_num\":\"0|3\"/, "\"free_read_num\":9999");
 $done({ body });
