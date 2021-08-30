@@ -3,7 +3,7 @@
 ***************************
 QuantumultX:
 [rewrite_local]
-^https:\/\/papi\.jiemian\.com\/app\/(user|pro|article)\/ url script-response-body https://raw.githubusercontent.com/litieyin/AD_VIP/main/Script/jiemian.js
+^https:\//v.miguvideo.com\/ability\/v url script-response-body https://raw.githubusercontent.com/litieyin/AD_VIP/main/Script/migu/ability.js
 [mitm]
 hostname = v.miguvideo.com
 **************************/
