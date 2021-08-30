@@ -9,5 +9,6 @@ hostname = d1025gvspu57dc.cloudfront.net
 **************************/
 var body = $response.body
     .replace(/\"premium\":0/, "\"premium\":1")
+    .replace(/\"standard\":0/, "\"standard\":1")
     .replace(/\"expire\":\"1632009600\"/, "\"expire\":\"2524521600\"");
 $done({ body });
