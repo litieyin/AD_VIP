@@ -8,7 +8,7 @@ QuantumultX:
 hostname = pay.qingting.fm
 **************************/
 var body = $response.body
-    .replace(/\"expire_time\":\"\d\d\d\d-\d\d-d\d \d\d:\d\d:\d\d\"/, "\"expire_time\":\"2049-12-31 23:59:59\"")
+    .replace(/\"expire_time\":\"\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\"/, "\"expire_time\":\"2049-12-31 23:59:59\"")
     .replace(/\"state\":\"\S*\"/, "\"state\":\"active\"")
     .replace(/\"desc\":\"*\"/, "\"desc\":\"2049.12.31到期\"")
     .replace(/\"type\":\"*\"/, "\"type\":\"openvip\"");
