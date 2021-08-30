@@ -3,7 +3,7 @@
 ***************************
 QuantumultX:
 [rewrite_local]
-^https:\//pay.qingting.fm\/cashdesk\/v1\/vip\/charge?user_id url script-response-body https://raw.githubusercontent.com/litieyin/AD_VIP/main/Script/qtfm.js
+^https:\//pay.qingting.fm\/cashdesk\/v1\/vip\/charge?user_id url script-response-body https://raw.githubusercontent.com/litieyin/AD_VIP/main/Script/qtfm/pay.js
 [mitm]
 hostname = pay.qingting.fm
 **************************/
