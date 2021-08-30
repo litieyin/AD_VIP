@@ -7,13 +7,7 @@ QuantumultX:
 [mitm]
 hostname = d1025gvspu57dc.cloudfront.net
 **************************/
-var body = "{
-  "paywall" : 0,
-  "premium" : 1,
-  "expire" : "2524521600",
-  "standard" : 0,
-  "campaign_code" : "",
-  "latest_duration" : "yearly",
-  "v" : 1986
-}"
+var body = $response.body
+    .replace(/\"premium\":0/, "\"premium\":1")
+    .replace(/\"expire\":\"1632009600\"/, "\"expire\":\"2524521600\"");
 $done({ body });
