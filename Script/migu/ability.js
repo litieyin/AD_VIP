@@ -8,9 +8,8 @@ QuantumultX:
 hostname = v.miguvideo.com
 **************************/
 var body = $response.body
-    .replace(/\"expiretime\":\"2021-09-29 16:50:52\"/, "\"expiretime\":\"2049-12-31 23:59:59\"")
-    .replace(/\"expiredcardImg\":\"\"/, "\"timesFlag\":\"0\"")
+    .replace(/\"expireTime\":\"2021-09-29 16:50:52\"/, "\"expireTime\":\"2049-12-31 23:59:59\"")
+    .replace(/\"expiredCardImg\":\"\"/, "\"timesFlag\":\"0\"")
     .replace(/\"expiredDay\":\"0\"/, "\"sealedFlag\":\"0\"")
-    .replace(/\"effectiveFlag\":\"0\"/, "\"effectiveFlag\":\"1\"")
-    .replace(/\"timeStamp\":\"1630227140760\"/, "\"timeStamp\":2524521600")
+    .replace(/\"effectiveFlag\":\"0\"/, "\"effectiveFlag\":\"1\"");
 $done({ body });
