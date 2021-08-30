@@ -8,7 +8,7 @@ QuantumultX:
 hostname = user.qingting.fm
 **************************/
 var body = $response.body
-    .replace(/\"expire_time\":\"\d\d\d\d-\d\d-d\d \d\d:\d\d:\d\d\"/p, "\"expire_time\":\"2049-12-31 23:59:59\"")
+    .replace(/\"expire_time\":\"\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\"/p, "\"expire_time\":\"2049-12-31 23:59:59\"")
     .replace(/\"state\":\"\S*\"/, "\"state\":\"active\"")
     .replace(/\"vip\":[true|false]/, "\"vip\":true");
 $done({ body });
