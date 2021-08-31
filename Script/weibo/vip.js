@@ -10,6 +10,5 @@ hostname = d1025gvspu57dc.cloudfront.net
 var body = $response.body
     .replace(/\"identity\":\"2,0\"/, "\"identity\":\"2,1\"")
     .replace(/\"您还不是微博高级会员\"/, "\"微博高级会员\"")
-    .replace(/\"s_type\":0/, "\"s_type\":1")
-    .replace(/\"expire_days\":/d*/, "\"expire_days\":0");
+    .replace(/\"s_type\":0/, "\"s_type\":1");
 $done({ body });
