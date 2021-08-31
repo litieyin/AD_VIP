@@ -4,5 +4,5 @@
 mitm= api.ttplus.cn
 */
 var body = $response.body
-    .replace(/\"expire\":0/, "\"expire\":\"2049-12-31\"");
+    .replace(/\"expire\":0/, "\"expire\":2524521600000");
 $done({ body });
