@@ -6,7 +6,7 @@ mitm= shimo.im
 
 let obj = JSON.parse($response.body);
     obj.membership = {
-    "accountTypeExpiredAt": "2099-04-30T16:00:00.000Z",
+    "accountTypeExpiredAt": "2049-12-31T16:00:00.000Z",
     "accountTypeCreatedAt": "2020-03-25T13:09:31.000Z",
     "accountType": "personal_premium",
     "isEnterprisePremium": true,
@@ -14,8 +14,19 @@ let obj = JSON.parse($response.body);
     "isNewDing": false,
     "isOfficial": true
   }
+  obj.accountMetadata= {
+    "isDingtalk" : false,
+    "isFreeEnterprise" : false,
+    "isTrial" : false,
+    "expiredAt" : {
+      "seconds" : 1945906839,
+      "nanos" : 55173442
+    },
+    "isWework" : false,
+    "isExpired" : false,
+    "isEnterprise" : false,
+    "isPersonalPremium" : true,
+    "isEnterprisePremium" : true,
+    "isEnterpriseLight" : false
+  }
 $done({body: JSON.stringify(obj)});
-var body1 = $body
-    .replace(/\"isPersonalPremium\":false/, "\"isPersonalPremium\":true")
-    .replace(/\"isEnterprisePremium\":false/, "\"isEnterprisePremium\":true");
-$done({ body1 });
