@@ -13,5 +13,6 @@ var body = $response.body
     .replace(/\"s_type\":0/, "\"s_type\":1")
     .replace(/\"is_baoyue\":0/, "\"is_baoyue\":1")
     .replace(/\"type\":0/, "\"type\":1")
+    .replace(/\"expired_days\":566/, "\"expired_days\":0")
     .replace(/\"baoyue_type\":false/, "\"baoyue_type\":true");
 $done({ body });
