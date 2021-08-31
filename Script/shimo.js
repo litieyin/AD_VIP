@@ -1,6 +1,7 @@
 /*
-石墨文档解锁VIP未测试，自行测试
-https://api.shimo.im/users/
+石墨文档解锁VIP
+https://shimo.im/lizard-api/users/me
+mitm= shimo.im
 */
 
 let obj = JSON.parse($response.body);
