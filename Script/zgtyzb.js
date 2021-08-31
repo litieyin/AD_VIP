@@ -1,25 +1,17 @@
 /*
-中国体育直播 unlock  by 军哥哥
-
-app 下载地址:https://t.cn/Ai8I6z7p
-
-电报频道：https://t.me/ThorHCC
-电报群组：https://t.me/f4thorHCC
-QQ资源群：189519867
-QQ吹牛群：316864309
-
+中国体育直播 unlock 
 QX:
 
 [rewrite_local]👇
 
-http:\/\/rest\.zhibo\.tv\/room\/get\-room\-info\-v430 url script-response-body zgtyzb.js
+http:\/\/rest\.zhibo\.tv\/room\/get\-pull\-stream\-info\-v430 url script-response-body zgtyzb.js
 
 
 MITM = rest.zhibo.tv
 
 */
 
-const path1 = "/room/get-room-info-v430";
+const path1 = "/room/get-pull-stream-info-v430";
 
 let obj = JSON.parse($response.body);
 
