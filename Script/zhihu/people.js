@@ -1,7 +1,6 @@
 
 let body = $response.body 
 body=JSON.parse(body)
-delete body['mcn_user_info']
 body.vip_info = {
      "is_vip" : true,
     "entrance_v2" : {
