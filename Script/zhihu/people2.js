@@ -13,6 +13,6 @@ hostname = ap*.intsig.net
 **************************/
 
 var body = $response.body
-    .replace(/\"vip_type\":\".*\"/, "\"vip_type\":\"svip\"")
-    .replace(/\"text\":\".* 到期\"/, "\"text\":\"2049-12-31 到期\"");
+    .replace(/\"vip_type\":\".*?\"/, "\"vip_type\":\"svip\"")
+    .replace(/\"text\":\".*? 到期\"/, "\"text\":\"2049-12-31 到期\"");
 $done({ body });
