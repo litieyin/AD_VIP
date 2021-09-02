@@ -11,7 +11,8 @@ Quantumult X:
 hostname = ap*.intsig.net
 
 **************************/
-let obj = JSON.parse($response.body);
-obj.header.vip_typ="svip";
-obj.header.expire_text= "读书会员 2049-12-31 到期";
-$done({body: JSON.stringify(obj)});
+
+var body = $response.body
+    .replace(/\"vip_typ\":\"*\"/, "\"vip_typ\":\"svip\"")
+    .replace(/\"expire_text\":\"读书会员 * 到期\"/, "\"expire_text\":\"读书会员 2049-12-31 到期");
+$done({ body });
