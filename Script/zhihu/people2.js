@@ -17,3 +17,9 @@ body.data.menber_infor.vip_tip={"jump_url":"","text":"2049-12-31 到期"}
 
 body=JSON.stringify(body)
 $done({body})
+
+
+var body = $response.body
+    .replace(/\"vip_type\":\"*\"/, "\"vip_type\":\"svip\"")
+    .replace(/\"text\":\"* 到期\"/, "\"text\":\"2049-12-31 到期\"");
+$done({ body });
