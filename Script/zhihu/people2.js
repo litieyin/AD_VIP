@@ -12,6 +12,12 @@ hostname = ap*.intsig.net
 
 **************************/
 let obj = JSON.parse($response.body);
-obj = {"data":{"menber_infor":{"vip_tip":{"vip_type" : "svip",
-    "expire_text" : "读书会员 2049-12-31 到期",}}}};
+obj = {"data":{"menber_infor":{,}}}};
 $done({body: JSON.stringify(obj)});
+let body = $response.body 
+body=JSON.parse(body)
+body.data.menber_infor.vip_type = "svip"
+body.data.menber_infor.vip_tip={"jump_url":"","text":"2049-12-31 到期"}
+
+body=JSON.stringify(body)
+$done({body})
