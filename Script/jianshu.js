@@ -6,8 +6,8 @@ mitm= www.jianshu.com
 
 let obj = JSON.parse($response.body);
     obj.members = {
-    "title" : "银牌会员 - 12个月",
-    "description" : "银牌会员 - 12个月",
+    "title" : "银牌会员",
+    "description" : "银牌会员",
     "iap_product_id" : "silver_vip",
     "expire_time" : 2524521600
   }
