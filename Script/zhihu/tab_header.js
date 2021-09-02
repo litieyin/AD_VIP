@@ -1,14 +1,14 @@
 /*
-CamScanner 解锁部分高级特权
+知乎vip
 
 ***************************
 Quantumult X:
 
 [rewrite_local]
-^https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\? url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/CamScanner.js
+^https://api.zhihu.com/bazaar/tab_header$ url script-response-body https://raw.githubusercontent.com/litieyin/AD_VIP/main/Script/zhihu/tab_header.js
 
 [mitm]
-hostname = ap*.intsig.net
+hostname = api.zhihu.com
 
 **************************/
 
