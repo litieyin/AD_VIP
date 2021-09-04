@@ -9,6 +9,6 @@ QuantumultX:
 hostname = dxy.com
 **************************/
 var body = $response.body
-    .replace(/\"status\":9/, "\"status\":1")
+    .replace(/\"status\":9/, "\"status\":10")
     .replace(/\"expire_timestamp\":0/, "\"expire_timestamp\":2524521600");
 $done({ body });
