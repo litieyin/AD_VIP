@@ -8,5 +8,5 @@ QuantumultX:
 hostname = open.taou.com
 **************************/
 var body = $response.body
-    .replace(/\"real_expire_days.*?expire_time_list\"/, "\"real_expire_days\": 999, \"expire_time_list\"");
+    .replace(/\"real_expire_time.*?activity\"/, "\"real_expire_time\": \"999\\u5929\\u540e\\u5230\\u671f\", \"real_expire_days\": 999, \"expire_time_list\": \[\{\"name\": \"\\u804c\\u573aVIP\\u4f1a\\u5458\", \"expire_time\": \"2029-12-31\\u5230\\u671f"\}\]\}, \"activity\"");
 $done({ body });
