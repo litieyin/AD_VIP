@@ -8,5 +8,5 @@ QuantumultX:
 hostname = app.58.com
 **************************/
 var body = $response.body
-    .replace(/\"isvip\":false/, "\"isvip\":true");
+    .replace(/\"is_vip\":false/, "\"is_vip\":true");
 $done({ body });
