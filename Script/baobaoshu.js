@@ -9,5 +9,5 @@ hostname = go.babytree.com
 **************************/
 var body = $response.body
     .replace(/\"member_status\":\"0\"/p, "\"member_status\":\"1\"")
-    .replace(/\"expirationDate\":\"\"/p, "\"expirationDate\":\"2049-12-31\"");
+    .replace(/\"expirationDate\":\"\"/p, "\"expirationDate\":\"1893378147\"");
 $done({ body });
