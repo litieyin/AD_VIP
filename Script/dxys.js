@@ -10,6 +10,6 @@ hostname = dxy.com
 **************************/
 var body = $response.body
     .replace(/\"type\":0/, "\"type\":1")
-    .replace(/\"status\":9/, "\"status\":1")
-    .replace(/\"expire_timestamp\":0/, "\"expire_timestamp\":2524521600");
+    .replace(/\"status\":9/, "\"status\":6")
+    .replace(/\"expire_timestamp\":0/, "\"expire_timestamp\":2524521600000");
 $done({ body });
