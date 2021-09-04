@@ -8,6 +8,5 @@ QuantumultX:
 hostname = go.babytree.com
 **************************/
 var body = $response.body
-    .replace(/\"member_status\":\"0\"/p, "\"member_status\":\"1\"")
-    .replace(/\"expirationDate\":\"\"/p, "\"expirationDate\":\"1893378147\"");
+    .replace(/\"member_status\":\"0\"/p, "\"member_status\":\"1\"");
 $done({ body });
