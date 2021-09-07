@@ -13,5 +13,5 @@ hostname = api.zhihu.com
 
 var body = $response.body
     .replace(/\"vip_type\":\".*\"?/, "\"vip_type\":\"svip\",")
-    .replace(/\"expire_text\":\".*,?/, "\"expire_text\":\"读书会员 2049-12-31 到期\",");
+    .replace(/\"expire_text\":\".*\"?/, "\"expire_text\":\"读书会员 2049-12-31 到期\"");
 $done({ body });
