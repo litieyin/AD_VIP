@@ -9,5 +9,5 @@ hostname = gateway.caixin.com
 **************************/
 var body = $response.body
     .replace(/\"expireTime\":0/, "\"expireTime\": 2524579199000")
-    .replace(/\"unit\":1/, "\"unit\": 4");
+    .replace(/\"unit\":1/, "\"unit\": 615");
 $done({ body });
