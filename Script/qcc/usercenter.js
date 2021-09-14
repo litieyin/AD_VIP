@@ -1,4 +1,4 @@
  var body = $response.body
-    .replace(/\"isSvip\":false/, "\"isSvip\":true")
-    .replace(/\"statusSVIP\":\{\"expire\":\"\"\}/, "\"statusSVIP\":\{\"expire\":\"2099-12-31\"\}");
+    .replace(/\"isVip\":false,\"isSvip\":false/, "\"isVip\":true,\"isSvip\":true")
+    .replace(/\"expire\":\"\"/g, "\"expire\":\"2099-12-31\"");
 $done({ body });
