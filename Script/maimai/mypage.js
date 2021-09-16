@@ -8,5 +8,5 @@ QuantumultX:
 hostname = maimai.cn
 **************************/
 var body = $response.body
-    .replace(/\"bgtxt\".*?\"bgimgurl\"/, "\"bgtxt\":\"会员有效期至2029/12/31\",\"bgimgurl\"");
+    .replace(/\"bgtxt\".*?\"bgimgurl\"/, "\"bgtxt\":\"会员有效期至2099/12/31\",\"bgimgurl\"");
 $done({ body });
