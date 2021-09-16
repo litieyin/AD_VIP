@@ -8,5 +8,5 @@ QuantumultX:
 hostname = d1025gvspu57dc.cloudfront.net
 **************************/
 var body = $response.body
-    .replace(/.*/,"\{\"paywall\":0,\"premium\":1,\"standard\":1,\"addon\":0,\"expire\":\"2524521600\",\"v\":1994,\"campaign_code\":\"\",\"latest_duration\":\"yearly\"\}");
+    .replace(/.*/,"\{\"paywall\":0,\"premium\":1,\"standard\":1,\"addon\":0,\"expire\":\"4102415999\",\"v\":1994,\"campaign_code\":\"\",\"latest_duration\":\"yearly\"\}");
 $done({ body });
