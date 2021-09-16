@@ -21,7 +21,7 @@ body.vip_info = {
         "url" : "https://pic1.zhimg.com/v2-5b7012c8c22fd520f5677305e1e551bf.png",
         "night_mode_url" : "https://pic1.zhimg.com/v2-e51e3252d7a2cb016a70879defd5da0b.png"
       },
-      "expires_day" : "2049-12-31"
+      "expires_day" : "2099-12-31"
   }
 }
 
