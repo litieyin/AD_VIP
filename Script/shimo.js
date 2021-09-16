@@ -6,7 +6,7 @@ mitm= shimo.im
 
 let obj = JSON.parse($response.body);
     obj.membership = {
-    "accountTypeExpiredAt": "2049-12-30T16:00:00.000Z",
+    "accountTypeExpiredAt": "2099-12-30T16:00:00.000Z",
     "accountTypeCreatedAt": "2020-03-25T13:09:31.000Z",
     "accountType": "personal_premium",
     "isEnterprisePremium": true,
@@ -19,7 +19,7 @@ let obj = JSON.parse($response.body);
     "isFreeEnterprise" : false,
     "isTrial" : false,
     "expiredAt" : {
-      "seconds" : 1945906839,
+      "seconds" : 4102415999,
       "nanos" : 55173442
     },
     "isWework" : false,
