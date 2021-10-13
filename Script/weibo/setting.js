@@ -1,3 +1,3 @@
 var body = $response.body
-    .replace(/\"type\":\"2\"/g, "\"type\":\"1\"");
+    .replace(/\"vip\":\"1\"/g, "\"vip\":\"0\"");
 $done({ body });
