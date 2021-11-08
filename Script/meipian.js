@@ -1,4 +1,3 @@
-**************************/
 var body = $response.body
     .replace(/\"member_type\":0/, "\"member_type\":2")
     .replace(/\"status\":0/, "\"status\":2")
