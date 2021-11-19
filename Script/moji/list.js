@@ -1,4 +1,5 @@
 var body = $response.body
-    .replace(/\"vip\":\"0\"/, "\"vip\":\"1\"")
-    .replace(/\"is_vip\":\"0\"/, "\"is_vip\":\"1\"");
+    .replace(/\"svip_expired_at\":.*?,\"/g, "\"svip_expired_at\":4102415999.5412800312,\"")
+    .replace(/\"vip_type\":\".*?\"/, "\"vip_type\":\"s\"")
+    .replace(/\"is_vip\":.*?,/, "\"is_vip\":true,");
 $done({ body });
