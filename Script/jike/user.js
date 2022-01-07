@@ -1,5 +1,4 @@
 **************************/
 var body = $response.body
-    .replace(/\"isSponsor\":false/g, "\"isSponsor\":true")
-    .replace(/\"valid\":false/, "\"valid\":true");
+    .replace(/\"isSponsor\":false/g, "\"isSponsor\":true");
 $done({ body });
