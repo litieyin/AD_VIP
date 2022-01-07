@@ -1,6 +1,6 @@
 **************************/
 var body = $response.body
-    .replace(/\"isActive\":false/, "\"isActive\":true")
+    .replace(/\"isActive\":false/g, "\"isActive\":true")
     .replace(/\"paymentType\":\"\"/, "\"paymentType\":\"CHARGE\"")
     .replace(/\"status\":\"\"/, "\"status\":\"续费Jike Yellow\"")
     .replace(/\"productId\":\"\"/, "\"productId\":\"com.ruguoapp.jike.once3year\"")
