@@ -6,6 +6,6 @@ var body = $response.body
     .replace(/\"productId\":\"\"/, "\"productId\":\"com.ruguoapp.jike.once3year\"")
     .replace(/\"subscribedProductId\":\"\"/, "\"subscribedProductId\":\"com.ruguoapp.jike.once3year\"")
     .replace(/\"platform\":\"\"/, "\"platform\":\"IOS\"")
-    .replace(/\"sponsorId\":0/, "\"sponsorId\":1")
-    .replace(/\"days\":0/, "\"days\":2");
+    .replace(/\"sponsorId\":0/, "\"sponsorId\":2")
+    .replace(/\"days\":0/, "\"days\":36");
 $done({ body });
