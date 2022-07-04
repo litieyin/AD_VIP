@@ -1,3 +1,7 @@
-var body = $response.body
-    .replace(/1657522799000/, "4102415999000");
-$done({ body });
+var obj = JSON.parse($response.body);
+
+obj = {
+{"mobileProfileSpecVersion":"1.0","mobileProfile":{"id":"3b82e269-3af0-43b4-98a9-57986d3370f6","previousProfileId":null,"serverId":"lcs-mobile-cops","profileStatus":"PROFILE_AVAILABLE","appLicenseMode":"FREEMIUM","legacyProfile":"{\"licenseId\":\"6D9AE026FADC6E9767EA\",\"licenseType\":3,\"licenseVersion\":\"1.0\",\"effectiveEndTimestamp\":4102415999000,\"graceTime\":1382400000,\"licensedFeatures\":[],\"enigmaData\":{\"productId\":999,\"serialKey\":\"909705317204142075672469\",\"clearSerialKey\":\"15984699818860331728\",\"locale\":\"ALL\",\"associatedLocales\":\"ALL\",\"platform\":0,\"isk\":9999999,\"customerId\":0,\"deliveryMethod\":3,\"pc\":true,\"rb\":false}}","relationshipProfile":"[{\"profileGenerationTimestamp\":1656897194628,\"licenseId\":\"6D9AE026FADC6E9767EA\",\"licenseExpiryTimestamp\":1658905199000,\"appEntitlementStatus\":\"SUBSCRIPTION\",\"activationType\":\"NAMED_USER\",\"billingStatus\":\"NORMAL\",\"usedForLegacyProfile\":true,\"licenseExpiryWarningControl\":{\"warningStartTimestamp\":1658300399000,\"warningInterval\":0}}]","userProfile":"{\"userId\":\"1307069462C1B3610A495E6E@AdobeID\",\"firstName\":\"%E9%93%81%E9%93%B6\",\"lastName\":\"%E6%9D%8E\",\"email\":\"ltieyin@gmail.com\",\"countryCode\":\"CN\",\"displayName\":\"%E6%9D%8E%20%E9%93%81%E9%93%B6\",\"accountType\":\"type1\",\"authId\":\"1307069462C1B3610A495E6E@AdobeID\"}","additionalLegacyProfiles":"{}","appProfile":"{}","controlProfile":{"cacheRefreshControl":{"appRefreshInterval":84600000}}},"workflow":null}
+ }
+
+$done({body: JSON.stringify(obj)});
