@@ -5,5 +5,5 @@ mitm= aiqicha.baidu.com
 */
 
 var body = $response.body
-    .replace(/\"svip\":\{\"status\":0/g, "\"svip\":\{\"status\":1");
+    .replace(/\"svip\":\{\"status\":0,/"startTime/":/"/",/"endTime/":/"/"/, "\"svip\":\{\"status\":1,/"startTime/":/"2022-12-07/",/"endTime/":/"2099-12-31/"");
 $done({ body });
