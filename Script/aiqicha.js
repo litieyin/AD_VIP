@@ -5,5 +5,5 @@ mitm= aiqicha.baidu.com
 */
 
 var body = $response.body
-    .replace(/\"status\":0/g, "\"status\":1");
+    .replace(/\"svip\":\{\"status\":0/g, "\"svip\":\{\"status\":1");
 $done({ body });
